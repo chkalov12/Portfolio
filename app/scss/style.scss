@@ -1,0 +1,41 @@
+@import "vars";
+@import "fonts";
+@import "global";
+@import "button";
+.header {
+    padding: 20px 0;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.menu {
+    &__item {
+        position: relative;
+        display: inline-block;
+        &+& {
+            margin-left: 80px;
+        }
+    }
+    &__link {
+        text-transform: uppercase;
+    }
+}
+
+.about {
+    padding: 100px 0;
+    &__inner {
+        background-image: url(../images/vetal.png);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+    }
+    &__pretitle {
+        font-size: 24px;
+        line-height: 35px;
+        text-transform: uppercase;
+    }
+}
+
+@import 'media';
