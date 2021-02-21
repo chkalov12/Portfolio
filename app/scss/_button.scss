@@ -4,7 +4,7 @@
 }
 
 .glitch-btn:hover {
-    color: #00ffb4;
+    color: $local;
 }
 
 .glitch-btn:hover:before {
@@ -17,7 +17,7 @@
     position: absolute;
     left: -20%;
     top: -10%;
-    background: #00ffb4;
+    background: $local;
     width: 3px;
     height: 120%;
     padding: 0px;

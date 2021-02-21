@@ -3,7 +3,12 @@
 @import "global";
 @import "button";
 .header {
+    background: rgba(#000, 0.7);
     padding: 20px 0;
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    right: 0;
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -24,17 +29,136 @@
     }
 }
 
-.about {
-    padding: 100px 0;
+.top {
+    background-image: url(../images/top-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 200px 0 100px;
     &__inner {
-        background-image: url(../images/vetal.png);
-        background-repeat: no-repeat;
-        background-position: right bottom;
+        text-align: center;
+        padding-top: 80px;
     }
-    &__pretitle {
+    &__pretitle,
+    &__text {
         font-size: 24px;
         line-height: 35px;
         text-transform: uppercase;
+        color: $local;
+        letter-spacing: 2px;
+        font-weight: 700;
+    }
+    &__title {
+        font-size: 75px;
+        line-height: 80px;
+        margin-bottom: 70px;
+        text-transform: uppercase;
+        margin: 75px 0;
+    }
+    &__text {
+        margin-bottom: 80px;
+        margin-top: 0px;
+    }
+    &__btn {
+        &+& {
+            margin-left: 20px;
+        }
+        font-weight: 700;
+        color: $local;
+        padding: 13px;
+        width: 170px;
+        text-align: center;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        max-width: 250px;
+        text-transform: uppercase;
+        border-radius: 5px;
+        border: 1px solid currentColor;
+        transition: all 0.4s;
+        &:hover {
+            color: #fff;
+            span {
+                width: 225%;
+                height: 562.5px;
+            }
+        }
+        span {
+            position: absolute;
+            display: block;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background-color: $local;
+            transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+    }
+}
+
+.about {
+    padding: 80px 0;
+    color: #000;
+    background-color: #efefef;
+    &__text {}
+}
+
+.skills {
+    background-image: url(../images/skill-bg.jpg);
+    background-attachment: fixed;
+    padding: 100px 0;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__items {
+        width: 100%;
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+    }
+    &__text {
+        margin-left: 20px;
+        min-height: 82px;
+        padding: 5px 5px 5px 20px;
+        text-align: left;
+        max-width: 475px;
+        width: 100%;
+        background-color: #5d5d5d;
+        border-radius: 5px;
+    }
+    &__lines {
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+    &__line-wrap {
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #000;
+        padding: 1px 2px;
+        background-color: #444;
+        &:nth-child(2) {
+            margin: 125px 0;
+        }
+    }
+    &__line {
+        border-radius: 5px;
+        max-width: 85%;
+        background-color: $local;
+        height: 25px;
+        text-align: center;
+        &-gulp {
+            max-width: 75%;
+        }
+        &-js {
+            max-width: 35%;
+        }
     }
 }
 

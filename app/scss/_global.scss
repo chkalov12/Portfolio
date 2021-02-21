@@ -50,11 +50,36 @@ li {
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
     color: #fff;
     position: relative;
     background-color: #444444;
+}
+
+.page-shadow {
+    position: relative;
+    background-repeat: no-repeat;
+    &::before {
+        content: "";
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        background: rgba(#000, .5);
+    }
+}
+
+.page-wrapper {
+    position: relative;
+}
+
+.title {
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
 }

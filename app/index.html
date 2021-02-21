@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOC</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -20,6 +20,14 @@
                 </a>
 
                 <ul class="menu">
+                    <li class="menu__item">
+                        <a class="glitch-btn menu__link" href="#" target="_blank">
+                            <div class="text">about</div>
+                            <div class="mask">
+                                <span>about</span>
+                            </div>
+                        </a>
+                    </li>
                     <li class="menu__item">
                         <a class="glitch-btn menu__link" href="#" target="_blank">
                             <div class="text">Skills</div>
@@ -50,19 +58,114 @@
 
     </header>
 
+
+    <section class="top page-shadow">
+        <div class="container">
+            <div class="page-wrapper">
+                <div class="top__inner">
+                    <p class="top__pretitle">
+                        приветствую на моем сайте портфолио
+                    </p>
+                    <h1 class="top__title">
+                        Я Халимский Виталий
+                    </h1>
+                    <p class="top__text">
+                        Разработка сайтов
+                    </p>
+                    <!-- <a href="" class="top__btn top-resume">
+                         Lern more
+                        <span></span>
+                     </a>
+                    <a href="" class="top__btn top-resume">
+                        Load resume
+                        <span></span>
+                    </a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="about">
         <div class="container">
-            <div class="about__inner">
-                <p class="about__pretitle">
-                    Hello on my portfolio
-                </p>
-                <h1 class="about__title">
-                    I'm Front-end developer Khalimskiy Vitaliy
-                </h1>
-                <p class="about__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, a?
-                </p>
+            <h3 class="about__title title">
+                Коротко о себе
+            </h3>
+            <p class="about__text">
+                Приветствую Вас на своем сайте-портфолио. Меня зовут Виталий. Живу в Николаеве. Занимаюсь HTML-версткой сайтов. У меня полностью кроссбраузерная, адаптивная и валидная верстка. Для обеспечения выполнения требований, предъявляемых к верстке сайта в процессе
+                работы над проектом я использую сборщик проектов Gulp для автоматизации процесса верстки, препроцессоры Less/Sass для ускоренной стилизации сайта и более гибкого кода, БЭМ, Smartgrid и media-запросы для адаптивной верстки сайта. Динамика
+                сайта организуется собственным jQuery кодом или настроенными плагинами. В конце работы осуществляется проверка отображения верстки в различных браузерах на разных устройствах, код проверяется валидатором на соответствие стандартам и устраняются
+                выявленные ошибки.
+            </p>
+        </div>
+    </section>
+
+    <section class="skills page-shadow">
+        <div class="container">
+            <div class="page-wrapper">
+                <h3 class="skills__title title">
+                    Мои навыки
+                </h3>
+                <div class="skills__inner">
+                    <div class="skills__items">
+                        <div>
+                            <div class="skills__item">
+                                <div class="skills__img">
+                                    <img src="images/skills-1.png" alt="">
+                                </div>
+                                <p class="skills__text">
+                                    I am engaged in HTML-layout of sites. I have a completely cross-browser, responsive and valid layout.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="skills__item">
+                                <div class="skills__img">
+                                    <img src="images/skills-2.png" alt="">
+                                </div>
+                                <p class="skills__text">
+                                    In order to write code faster, I use Scss preprocessors as well as a collection of projects Gulp for automation and development comfort.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="skills__item">
+                                <div class="skills__img">
+                                    <img src="images/skills-1.png" alt="">
+                                </div>
+                                <p class="skills__text">
+                                    I use JavaScript and JQuery plugins to implement sliders of palanquin tabs, etc. I can write my own code, but it's more top simple tasks.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__lines">
+                        <div class="skills__line-wrap">
+                            <div class="skills__line skills__line-html">
+                                html/css
+                            </div>
+                        </div>
+                        <div class="skills__line-wrap">
+                            <div class="skills__line skills__line-gulp">
+                                gulp/scss
+                            </div>
+                        </div>
+                        <div class="skills__line-wrap">
+                            <div class="skills__line skills__line-js">
+                                js/jquery
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <section class="works">
+        <div class="container">
+            <div class="works__title title">
+                Примеры моих работ
+            </div>
+            <div class="works__inner"></div>
         </div>
     </section>
 
