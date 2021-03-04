@@ -2,11 +2,47 @@
 @import "fonts";
 @import "global";
 @import "button";
+@import "preloader";
+.details-popup {
+    padding: 20px;
+    width: 100%;
+    margin: 20px auto;
+    top: 0;
+    &__title {
+        text-align: center;
+    }
+    &__items {
+        background-color: #fff;
+        color: #444;
+        margin-top: 20px;
+        padding: 0px 20px 20px 40px;
+        border-radius: 5px;
+        list-style: disc;
+    }
+    &__item {
+        list-style: disc;
+        &+& {
+            margin-top: 5px;
+        }
+    }
+    &__item-title {
+        text-align: center;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #000;
+        padding: 25px 0;
+    }
+    .mfp-close {
+        color: #fff;
+        font-size: 35px;
+    }
+}
+
 .header {
     background: rgba(#000, 0.7);
     padding: 20px 0;
     position: fixed;
-    z-index: 5;
+    z-index: 999;
     left: 0;
     right: 0;
     &__inner {
@@ -22,6 +58,15 @@
         display: inline-block;
         &+& {
             margin-left: 80px;
+        }
+        &:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+        &:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+        &:nth-child(4) {
+            animation-delay: 0.5s;
         }
     }
     &__link {
@@ -58,6 +103,13 @@
     &__text {
         margin-bottom: 80px;
         margin-top: 0px;
+    }
+    &__btns {
+        position: absolute;
+        z-index: 5;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
     }
     &__btn {
         &+& {
@@ -148,11 +200,13 @@
         }
     }
     &__line {
+        position: relative;
         border-radius: 5px;
         max-width: 85%;
         background-color: $local;
         height: 25px;
         text-align: center;
+        animation: width-anim 5s;
         &-gulp {
             max-width: 75%;
         }
@@ -171,6 +225,7 @@
     }
     &__item {
         position: relative;
+        border-radius: 5px;
         max-width: 350px;
         width: 100%;
         height: 167px;
@@ -189,6 +244,7 @@
             right: 0;
             bottom: 0;
             top: 0;
+            border-radius: 5px;
         }
         &:hover {
             transform: scale(1.1);
@@ -207,7 +263,13 @@
         background-color: #444;
         text-align: center;
         transition: all 0.3s;
-        padding: 10px 40px;
+        padding: 5px 50px 10px 30px;
+        border-radius: 5px;
+        position: relative;
+    }
+    .icon-external-link::before {
+        position: absolute;
+        right: 12px;
     }
 }
 
@@ -238,6 +300,15 @@
         &+& {
             margin-top: 10px;
         }
+    }
+}
+
+@keyframes width-anim {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
     }
 }
 

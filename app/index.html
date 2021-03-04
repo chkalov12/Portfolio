@@ -12,6 +12,105 @@
 </head>
 
 <body>
+
+    <div class="preloader">
+        <div class="load-2">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+
+
+    <div id="details" class="details-popup mfp-hide">
+        <div class="container">
+            <h3 class="details-popup__title">
+                JUNIOR FRONT-END DEVELOPER, ВЕРСТАЛЬЩИК
+            </h3>
+            <ul class="details-popup__items">
+                <li class="details-popup__item-title">
+                    мои навыки
+                </li>
+                <li class="details-popup__item">
+                    HTML5, CSS3;
+                </li>
+                <li class="details-popup__item">
+                    препроцесоры SCSS/SASS;
+                </li>
+                <li class="details-popup__item">
+                    Git - базовые знания;
+                </li>
+                <li class="details-popup__item">
+                    JavaScript, JQuery (подключение, адаптация и использование плагинов);
+                </li>
+                <li class="details-popup__item">
+                    Методология БЭМ;
+                </li>
+                <li class="details-popup__item">
+                    Gulp, npm;
+                </li>
+                <li class="details-popup__item">
+                    Адаптивная, кросбраузерная верстка, mobile first;
+                </li>
+                <li class="details-popup__item">
+                    Adobe Photoshop, Figma, Adobe XD;
+                </li>
+            </ul>
+            <ul class="details-popup__items">
+                <li class="details-popup__item-title">
+                    Курсы
+                </li>
+                <li class="details-popup__item">
+                    курсы по верстке «from 0 to 1» Вадима Прокопчука (Харьков)
+                </li>
+            </ul>
+            <ul class="details-popup__items">
+                <li class="details-popup__item-title">
+                    Образование
+                </li>
+                <li class="details-popup__item">
+                    НУК им. Адмирала Макарова, квалификация – тренер-инструктор
+                </li>
+            </ul>
+            <ul class="details-popup__items">
+                <li class="details-popup__item-title">
+                    Владение языками
+                </li>
+                <li class="details-popup__item">
+                    English - Pre-Intermediate
+                </li>
+                <li class="details-popup__item">
+                    Русский
+                </li>
+                <li class="details-popup__item">
+                    Украинский
+                </li>
+            </ul>
+            <ul class="details-popup__items">
+                <li class="details-popup__item-title">
+                    Личные качества
+                </li>
+                <li class="details-popup__item">
+                    Старательность, не конфликтность, порядочность, пунктуальность, стремление к росту проф навыков, активность, умение работать в команде, способность быстро и самостоятельно обучаться
+                </li>
+                <li class="details-popup__item-title">
+                    НАВЫКИ РАБОТЫ С ПК
+                </li>
+                <li class="details-popup__item">
+                    Уверенное пользование ПК
+                </li>
+                <li class="details-popup__item-title">
+                    Цель
+                </li>
+                <li class="details-popup__item">
+                    Senior Frontend developer.
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+
     <header class="header">
         <div class="container">
             <div class="header__inner">
@@ -20,35 +119,35 @@
                 </a>
 
                 <ul class="menu">
-                    <li class="menu__item">
+                    <li class="menu__item animated fadeInRightBig">
                         <a class="glitch-btn menu__link" href="#" target="_blank">
-                            <div class="text">about</div>
+                            <div class="text">о себе</div>
                             <div class="mask">
-                                <span>about</span>
+                                <span>о себе</span>
                             </div>
                         </a>
                     </li>
-                    <li class="menu__item">
+                    <li class="menu__item animated fadeInRightBig">
                         <a class="glitch-btn menu__link" href="#" target="_blank">
-                            <div class="text">Skills</div>
+                            <div class="text">Навыки</div>
                             <div class="mask">
-                                <span>Skills</span>
+                                <span>Навыки</span>
                             </div>
                         </a>
                     </li>
-                    <li class="menu__item">
+                    <li class="menu__item animated fadeInRightBig">
                         <a class="glitch-btn menu__link" href="#" target="_blank">
-                            <div class="text">Works</div>
+                            <div class="text">мои работы</div>
                             <div class="mask">
-                                <span>Works</span>
+                                <span>мои работы</span>
                             </div>
                         </a>
                     </li>
-                    <li class="menu__item">
+                    <li class="menu__item animated fadeInRightBig">
                         <a class="glitch-btn menu__link" href="#" target="_blank">
-                            <div class="text">Contacts</div>
+                            <div class="text">контакты</div>
                             <div class="mask">
-                                <span>Contacts</span>
+                                <span>контакты</span>
                             </div>
                         </a>
                     </li>
@@ -61,25 +160,28 @@
 
     <section class="top page-shadow">
         <div class="container">
+
             <div class="page-wrapper">
                 <div class="top__inner">
-                    <p class="top__pretitle">
+                    <p class="top__pretitle animated fadeInUpBig">
                         приветствую на моем сайте портфолио
                     </p>
-                    <h1 class="top__title">
-                        Я Халимский Виталий
+                    <h1 class="top__title animated fadeInDownBig">
+                        Халимский Виталий
                     </h1>
-                    <p class="top__text">
+                    <p class="top__text animated fadeInUpBig">
                         Разработка сайтов
                     </p>
-                    <!-- <a href="" class="top__btn top-resume">
-                         Lern more
-                        <span></span>
-                     </a>
-                    <a href="" class="top__btn top-resume">
-                        Load resume
-                        <span></span>
-                    </a> -->
+                    <div class="top__btns animated fadeInDownBig">
+                        <a href="#details" class="top__btn btn-details">
+                        детальнее
+                       <span></span>
+                    </a>
+                        <a href="docs/Junior-Front-end-dev_vitaliy_khalimskiy.docx" class="top__btn top-resume">
+                       резюме
+                       <span></span>
+                   </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -87,6 +189,7 @@
 
     <section class="about">
         <div class="container">
+
             <h3 class="about__title title">
                 Коротко о себе
             </h3>
@@ -108,7 +211,7 @@
                 <div class="skills__inner">
                     <div class="skills__items">
                         <div>
-                            <div class="skills__item">
+                            <div class="skills__item wow animated fadeInLeft">
                                 <div class="skills__img">
                                     <img src="images/skills-1.png" alt="">
                                 </div>
@@ -118,7 +221,7 @@
                             </div>
                         </div>
                         <div>
-                            <div class="skills__item">
+                            <div class="skills__item wow animated fadeInLeft">
                                 <div class="skills__img">
                                     <img src="images/skills-2.png" alt="">
                                 </div>
@@ -128,7 +231,7 @@
                             </div>
                         </div>
                         <div>
-                            <div class="skills__item">
+                            <div class="skills__item wow animated fadeInLeft">
                                 <div class="skills__img">
                                     <img src="images/skills-1.png" alt="">
                                 </div>
@@ -140,18 +243,18 @@
                     </div>
                     <div class="skills__lines">
                         <div class="skills__line-wrap">
-                            <div class="skills__line skills__line-html">
+                            <div class="skills__line skills__line-html wow" style="visibility: visible; animation-name: width-anim;">
                                 html/css
                             </div>
                         </div>
                         <div class="skills__line-wrap">
-                            <div class="skills__line skills__line-gulp">
+                            <div class="skills__line skills__line-gulp wow" style="visibility: visible; animation-name: width-anim;">
                                 gulp/scss
                             </div>
                         </div>
                         <div class="skills__line-wrap">
-                            <div class="skills__line skills__line-js">
-                                js/jquery
+                            <div class="skills__line skills__line-js wow" style="visibility: visible; animation-name: width-anim;">
+                                JS/Jquery
                             </div>
                         </div>
                     </div>
@@ -167,17 +270,17 @@
             </div>
             <ul class="works__inner">
                 <li class="works__item" style="background-image: url(images/works-1.JPG);">
-                    <a class="works__link" href="#">
+                    <a class="works__link icon-external-link" href="#">
                         перейти
                     </a>
                 </li>
                 <li class="works__item" style="background-image: url(images/works-2.JPG);">
-                    <a class="works__link" href="#">
+                    <a class="works__link icon-external-link" href="#">
                         перейти
                     </a>
                 </li>
                 <li class="works__item" style="background-image: url(images/works-3.JPG);">
-                    <a class="works__link" href="#">
+                    <a class="works__link icon-external-link" href="#">
                         перейти
                     </a>
                 </li>
@@ -187,12 +290,12 @@
                     </a>
                 </li>
                 <li class="works__item" style="background-image: url(images/works-5.JPG);">
-                    <a class="works__link" href="#">
+                    <a class="works__link icon-external-link" href="#">
                         перейти
                     </a>
                 </li>
                 <li class="works__item" style="background-image: url(images/works-1.JPG);">
-                    <a class="works__link" href="#">
+                    <a class="works__link icon-external-link" href="#">
                         перейти
                     </a>
                 </li>
