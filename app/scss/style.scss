@@ -74,6 +74,21 @@
     }
 }
 
+.menu__link--active {
+    color: $local;
+    // &::before {
+    //     background: #4e4e4e;
+    //     transform: translateX(2250%) scaleX(35) scaleY(0.2);
+    // }
+    // .mask {
+    //     display: block;
+    //     animation: glitchin 0.2s both;
+    // }
+    // .text {
+    //     animation: fade-in 0.8s forwards;
+    // }
+}
+
 .top {
     background-image: url(../images/top-bg.jpg);
     background-size: cover;
@@ -94,6 +109,9 @@
         font-weight: 700;
     }
     &__title {
+        animation-name: glitchin;
+        animation-duration: .7s;
+        animation-delay: 2s;
         font-size: 75px;
         line-height: 80px;
         margin-bottom: 70px;

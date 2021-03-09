@@ -113,14 +113,14 @@
 
     <header class="header">
         <div class="container">
-            <div class="header__inner">
-                <a class="logo" href="#">
+            <div class="header__inner header__nav">
+                <a class="logo" href="#top">
                     <img src="images/logo.png" alt="">
                 </a>
 
                 <ul class="menu">
                     <li class="menu__item animated fadeInRightBig">
-                        <a class="glitch-btn menu__link" href="#" target="_blank">
+                        <a class="glitch-btn menu__link menu__link--header" href="#about" target="_blank">
                             <div class="text">о себе</div>
                             <div class="mask">
                                 <span>о себе</span>
@@ -128,7 +128,7 @@
                         </a>
                     </li>
                     <li class="menu__item animated fadeInRightBig">
-                        <a class="glitch-btn menu__link" href="#" target="_blank">
+                        <a class="glitch-btn menu__link menu__link--header" href="#skills" target="_blank">
                             <div class="text">Навыки</div>
                             <div class="mask">
                                 <span>Навыки</span>
@@ -136,7 +136,7 @@
                         </a>
                     </li>
                     <li class="menu__item animated fadeInRightBig">
-                        <a class="glitch-btn menu__link" href="#" target="_blank">
+                        <a class="glitch-btn menu__link menu__link--header" href="#works" target="_blank">
                             <div class="text">мои работы</div>
                             <div class="mask">
                                 <span>мои работы</span>
@@ -144,7 +144,7 @@
                         </a>
                     </li>
                     <li class="menu__item animated fadeInRightBig">
-                        <a class="glitch-btn menu__link" href="#" target="_blank">
+                        <a class="glitch-btn menu__link menu__link--header" href="#contacts" target="_blank">
                             <div class="text">контакты</div>
                             <div class="mask">
                                 <span>контакты</span>
@@ -157,22 +157,21 @@
 
     </header>
 
-
-    <section class="top page-shadow">
+    <section class="top page-shadow" id="top">
         <div class="container">
 
             <div class="page-wrapper">
                 <div class="top__inner">
-                    <p class="top__pretitle animated fadeInUpBig">
+                    <p class="top__pretitle animated bounceInLeft">
                         приветствую на моем сайте портфолио
                     </p>
-                    <h1 class="top__title animated fadeInDownBig">
+                    <h1 class="top__title">
                         Халимский Виталий
                     </h1>
-                    <p class="top__text animated fadeInUpBig">
+                    <p class="top__text animated bounceInRight">
                         Разработка сайтов
                     </p>
-                    <div class="top__btns animated fadeInDownBig">
+                    <div class="top__btns animated bounceInRight">
                         <a href="#details" class="top__btn btn-details">
                         детальнее
                        <span></span>
@@ -187,7 +186,7 @@
         </div>
     </section>
 
-    <section class="about">
+    <section class="about page" id="about">
         <div class="container">
 
             <h3 class="about__title title">
@@ -202,7 +201,7 @@
         </div>
     </section>
 
-    <section class="skills page-shadow">
+    <section class="skills page-shadow page" id="skills">
         <div class="container">
             <div class="page-wrapper">
                 <h3 class="skills__title title">
@@ -263,7 +262,7 @@
         </div>
     </section>
 
-    <section class="works">
+    <section class="works page" id="works">
         <div class="container">
             <div class="works__title title">
                 Примеры моих работ
@@ -317,14 +316,13 @@
                         <a href="#" class="footer__social-link icon-facebook2"></a>
                     </li>
                 </ul>
-                <div class="footer__btn-box ">
+                <div class="footer__btn-box" id="contacts">
                     <a href="#" class="footer__btn">+38 (093) 443 00 79</a>
                     <a href="#" class="footer__btn">chkalov007@gmail.com</a>
                 </div>
             </div>
         </div>
     </footer>
-
 
 
 

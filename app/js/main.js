@@ -2,6 +2,8 @@ $(function() {
 
     $('.preloader').fadeOut('slow');
 
+    // .delay(500)
+
     $('.top__btn')
         .on('mouseenter', function(e) {
             var parentOffset = $(this).offset(),
@@ -19,6 +21,13 @@ $(function() {
     $('.btn-details').magnificPopup({
         type: 'inline',
         midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+    });
+
+    $('a[href^="#"]').click(function() {
+        elementClick = $(this).attr("href");
+        destination = $(elementClick).offset().top;
+        $('html').animate({ scrollTop: destination }, 1100);
+        return false;
     });
 
 

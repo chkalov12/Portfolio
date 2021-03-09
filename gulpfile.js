@@ -24,7 +24,8 @@ gulp.task('style', function() {
             'node_modules/slick-carousel/slick/slick.css',
             'node_modules/magnific-popup/dist/magnific-popup.css',
             'node_modules/animate.css/animate.css',
-            'node_modules/magnific-popup/dist/magnific-popup.css'
+            'node_modules/magnific-popup/dist/magnific-popup.css',
+            'node_modules/fullpage.js/dist/fullpage.css'
         ])
         .pipe(concat('libs.min.css'))
         .pipe(cssmin())
@@ -36,7 +37,8 @@ gulp.task('script', function() {
             'node_modules/slick-carousel/slick/slick.js',
             'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
             'node_modules/wow.js/dist/wow.js',
-            'node_modules/magnific-popup/dist/jquery.magnific-popup.js'
+            'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
+            'node_modules/fullpage.js/vendors/scrolloverflow.js'
         ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())
