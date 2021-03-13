@@ -128,6 +128,8 @@
         left: 0;
         right: 0;
         margin: 0 auto;
+        display: flex;
+        justify-content: center;
     }
     &__btn {
         &+& {
@@ -139,13 +141,16 @@
         width: 170px;
         text-align: center;
         position: relative;
-        display: inline-block;
         overflow: hidden;
         max-width: 250px;
         text-transform: uppercase;
         border-radius: 5px;
         border: 1px solid currentColor;
         transition: all 0.4s;
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+        flex-direction: row-reverse;
         &:hover {
             color: #fff;
             span {
