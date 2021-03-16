@@ -118,41 +118,45 @@
                 <a class="logo" href="#top">
                     <img src="images/logo.png" alt="">
                 </a>
-
-                <ul class="menu">
-                    <li class="menu__item animated fadeInRightBig">
-                        <a class="glitch-btn menu__link menu__link--header" href="#about" target="_blank">
-                            <div class="text">о себе</div>
-                            <div class="mask">
-                                <span>о себе</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="menu__item animated fadeInRightBig">
-                        <a class="glitch-btn menu__link menu__link--header" href="#skills" target="_blank">
-                            <div class="text">Навыки</div>
-                            <div class="mask">
-                                <span>Навыки</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="menu__item animated fadeInRightBig">
-                        <a class="glitch-btn menu__link menu__link--header" href="#works" target="_blank">
-                            <div class="text">мои работы</div>
-                            <div class="mask">
-                                <span>мои работы</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="menu__item animated fadeInRightBig">
-                        <a class="glitch-btn menu__link menu__link--header" href="#contacts" target="_blank">
-                            <div class="text">контакты</div>
-                            <div class="mask">
-                                <span>контакты</span>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
+                <nav class="header__nav">
+                    <button class="menu__btn">
+                        <span class="menu__btn-line"></span>
+                    </button>
+                    <ul class="menu">
+                        <li class="menu__item animated fadeInRightBig">
+                            <a class="glitch-btn menu__link menu__link--header" href="#about" target="_blank">
+                                <div class="text">о себе</div>
+                                <div class="mask">
+                                    <span>о себе</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="menu__item animated fadeInRightBig">
+                            <a class="glitch-btn menu__link menu__link--header" href="#skills" target="_blank">
+                                <div class="text">Навыки</div>
+                                <div class="mask">
+                                    <span>Навыки</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="menu__item animated fadeInRightBig">
+                            <a class="glitch-btn menu__link menu__link--header" href="#works" target="_blank">
+                                <div class="text">работы</div>
+                                <div class="mask">
+                                    <span>работы</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="menu__item animated fadeInRightBig">
+                            <a class="glitch-btn menu__link menu__link--header" href="#contacts" target="_blank">
+                                <div class="text">контакты</div>
+                                <div class="mask">
+                                    <span>контакты</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
 
@@ -218,6 +222,12 @@
                                 <p class="skills__text">
                                     I am engaged in HTML-layout of sites. I have a completely cross-browser, responsive and valid layout.
                                 </p>
+                                <div class="skills__line-wrap">
+                                    <span>html/css</span>
+                                    <div class="skills__line skills__line-html wow" style="visibility: visible; animation-name: width-anim;">
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div>
@@ -228,6 +238,12 @@
                                 <p class="skills__text">
                                     In order to write code faster, I use Scss preprocessors as well as a collection of projects Gulp for automation and development comfort.
                                 </p>
+                                <div class="skills__line-wrap">
+                                    <span>gulp/scss</span>
+                                    <div class="skills__line skills__line-gulp wow" style="visibility: visible; animation-name: width-anim;">
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div>
@@ -238,23 +254,12 @@
                                 <p class="skills__text">
                                     I use JavaScript and JQuery plugins to implement sliders of palanquin tabs, etc. I can write my own code, but it's more top simple tasks.
                                 </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skills__lines">
-                        <div class="skills__line-wrap">
-                            <div class="skills__line skills__line-html wow" style="visibility: visible; animation-name: width-anim;">
-                                html/css
-                            </div>
-                        </div>
-                        <div class="skills__line-wrap">
-                            <div class="skills__line skills__line-gulp wow" style="visibility: visible; animation-name: width-anim;">
-                                gulp/scss
-                            </div>
-                        </div>
-                        <div class="skills__line-wrap">
-                            <div class="skills__line skills__line-js wow" style="visibility: visible; animation-name: width-anim;">
-                                JS/Jquery
+                                <div class="skills__line-wrap">
+                                    <span>JS/Jquery</span>
+                                    <div class="skills__line skills__line-js wow" style="visibility: visible; animation-name: width-anim;">
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

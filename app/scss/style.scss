@@ -52,6 +52,36 @@
     }
 }
 
+.menu__btn {
+    display: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+    &-line {
+        background-color: #cbcbcb;
+        display: block;
+        width: 24px;
+        height: 2px;
+        transition: all 0.9s;
+        margin-bottom: 4px;
+    }
+    &::after,
+    &::before {
+        background-color: #cbcbcb;
+        display: block;
+        width: 24px;
+        height: 2px;
+        content: "";
+        margin-bottom: 4px;
+        transition: transform 0.3s;
+    }
+    &::after {
+        margin-top: 4px;
+    }
+}
+
 .menu {
     &__item {
         position: relative;
@@ -114,7 +144,6 @@
         animation-delay: 2s;
         font-size: 75px;
         line-height: 80px;
-        margin-bottom: 70px;
         text-transform: uppercase;
         margin: 75px 0;
     }
@@ -183,11 +212,6 @@
     background-image: url(../images/skill-bg.jpg);
     background-attachment: fixed;
     padding: 100px 0;
-    &__inner {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
     &__items {
         width: 100%;
     }
@@ -207,19 +231,23 @@
         background-color: #5d5d5d;
         border-radius: 5px;
     }
-    &__lines {
-        width: 100%;
-        margin-top: 50px;
-        margin-left: 20px;
-    }
     &__line-wrap {
+        margin-left: 20px;
         width: 100%;
         border-radius: 5px;
         border: 1px solid #000;
         padding: 1px 2px;
         background-color: #444;
+        position: relative;
+        text-align: center;
         &:nth-child(2) {
             margin: 125px 0;
+        }
+        span {
+            z-index: 5;
+            left: 0;
+            right: 0;
+            position: absolute;
         }
     }
     &__line {
@@ -228,7 +256,6 @@
         max-width: 85%;
         background-color: $local;
         height: 25px;
-        text-align: center;
         animation: width-anim 5s;
         &-gulp {
             max-width: 75%;
@@ -311,14 +338,14 @@
             margin-left: 20px;
         }
         &:hover {
-            transform: scale(1.2);
+            transform: scale(1.1);
         }
     }
     &__btn {
         display: block;
         transition: all 0.3s;
         &:hover {
-            transform: scale(1.2);
+            transform: scale(1.1);
         }
         &+& {
             margin-top: 10px;

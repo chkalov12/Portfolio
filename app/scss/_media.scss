@@ -1,33 +1,81 @@
-// @media (max-width: 1220px) {
-//     .form {
-//         input {
-//             max-width: 50%;
-//             margin-top: 15px;
-//             display: block;
-//             &+input {
-//                 margin-left: 0;
-//             }
-//         }
-//     }
-// }
-// @media (max-width: 1150px) {
-//     .advantages__inner,
-//     .blog__inner,
-//     .team__inner {
-//         flex-wrap: wrap;
-//         justify-content: space-around;
-//     }
-//     .advantages__item,
-//     .blog__item,
-//     .team__item {
-//         max-width: 400px;
-//         margin-bottom: 20px;
-//     }
-//     .team__item {
-//         margin-bottom: 40px;
-//     }
-//     .phone__img {
-//         margin-right: 0;
-//         max-width: 450px;
-//     }
-// }
+ @media (max-width: 800px) {
+     .menu {
+         display: none;
+     }
+     .menu__btn {
+         display: block;
+     }
+     .skills__item {
+         flex-wrap: wrap;
+         justify-content: center;
+         padding: 10px 5px;
+         border-radius: 5px;
+         background-color: rgba(#000, 0.8);
+     }
+     .skills__line-wrap {
+         margin-left: 0;
+         margin-bottom: 40px;
+         width: 100%;
+         order: -2;
+     }
+     .skills__text {
+         max-width: 100%;
+         margin-left: 0;
+         margin-top: 20px;
+     }
+     .works__item {
+         max-width: 255px;
+         width: 100%;
+         height: 122px;
+     }
+ }
+ 
+ @media (max-width: 650px) {
+     .container {
+         padding: 0 8px;
+     }
+     .top {
+         padding: 100px 0 50px;
+         &__inner {
+             padding-top: 0;
+         }
+         &__pretitle,
+         &__text {
+             font-size: 18px;
+         }
+         &__title {
+             font-size: 45px;
+             line-height: 60px;
+             margin: 40px 0;
+         }
+     }
+     .about,
+     .skills,
+     .works,
+     {
+         padding: 40px 0;
+         &__title {
+             font-size: 28px;
+             line-height: 32px;
+             margin-bottom: 30px;
+         }
+     }
+     .footer {
+         padding: 20px 0;
+     }
+ }
+ 
+ @media (max-width: 400px) {
+     .top__btn+.top__btn {
+         margin-left: 5px;
+     }
+     .top__btn {
+         font-size: 16px;
+     }
+     .footer__inner {
+         flex-direction: column-reverse;
+     }
+     .footer__social {
+         margin-top: 30px;
+     }
+ }
