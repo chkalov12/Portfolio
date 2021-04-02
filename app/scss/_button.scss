@@ -1,6 +1,7 @@
 .glitch-btn {
     display: inline-block;
     transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    padding-left: 20px;
 }
 
 .glitch-btn:hover {
@@ -9,13 +10,13 @@
 
 .glitch-btn:hover:before {
     background: #4e4e4e;
-    transform: translateX(2250%) scaleX(35) scaleY(0.2);
+    transform: translateX(2500%) scaleX(35) scaleY(0.2);
 }
 
 .glitch-btn:before {
     content: "";
     position: absolute;
-    left: -20%;
+    left: 0%;
     top: -10%;
     background: $local;
     width: 3px;

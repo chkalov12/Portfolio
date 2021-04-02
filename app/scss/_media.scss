@@ -1,9 +1,31 @@
- @media (max-width: 800px) {
+ @media (max-width: 820px) {
+     .header__nav {
+         width: auto;
+     }
      .menu {
-         display: none;
+         transform: translateX(200%);
+         transition: transform .5s;
+         position: absolute;
+         right: 0px;
+         top: 68px;
+         background-color: rgba(#000, 0.7);
+         padding: 33px;
+         border-bottom-left-radius: 5px;
+         transition: all 0.5s;
+     }
+     .menu.menu--active {
+         transform: translateX(0);
+         background: rgba(#000, 1);
      }
      .menu__btn {
          display: block;
+     }
+     .menu__item {
+         display: block;
+         &+& {
+             margin-left: 0;
+             margin-top: 15px;
+         }
      }
      .skills__item {
          flex-wrap: wrap;
@@ -33,6 +55,12 @@
  @media (max-width: 650px) {
      .container {
          padding: 0 8px;
+     }
+     .header {
+         padding: 15px 0;
+     }
+     .menu {
+         top: 58px;
      }
      .top {
          padding: 100px 0 50px;
@@ -77,5 +105,8 @@
      }
      .footer__social {
          margin-top: 30px;
+     }
+     .footer__btn {
+         margin-right: 0;
      }
  }
